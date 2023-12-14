@@ -25,6 +25,18 @@ body {
     background: lightcyan;
     display: flex;
 }
+#logo {
+    
+}
+#logo::after {
+    content: '';
+    background-image: url(../image/megazoo-logo.png);
+    background-repeat: no-repeat;
+    background-size: 75px 30px;
+    display: block;
+    width: 75px;
+    height: 30px;
+}
 
 
 .allmenu {
@@ -37,6 +49,14 @@ body {
 }
 .animated-text {
     height: 50px;
+}
+.animated-text .left {
+    background: #222;
+    color: #fff;
+}
+.animated-text .right {
+    background: #e30613;
+    color: #fff;
 }
 .animated-text span {
     font-size: 20px;
