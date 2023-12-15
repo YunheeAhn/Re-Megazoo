@@ -128,12 +128,18 @@ button::after {
 
 .animated-text {
     height: 50px;
-    background: aquamarine;
     width: 360px;
+}
+.animated-text.right {
+    background: #222222;
+}
+.animated-text.left {
+    background: #e30613;
 }
 
 .animated-text >span {
     font-size: 20px;
     width: 360px;
     font-family: 'Noto Sans KR';
+    color: #fff;
 }
