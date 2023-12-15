@@ -21,43 +21,109 @@ body {
 }
 
 #header {
+    width: 360px;
     height: 70px;
-    background: lightcyan;
+    background: aquamarine;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    position: relative;
 }
+.header-icon {
+    margin-right: auto;
+}
+
 #logo {
-    
+    display: block;
+    text-indent: -9999px;
 }
 #logo::after {
     content: '';
-    background-image: url(../image/megazoo-logo.png);
-    background-repeat: no-repeat;
-    background-size: 75px 30px;
     display: block;
     width: 75px;
     height: 30px;
+    background: url(../image/megazoo-logo.png) no-repeat center center;
+    background-size: 75px 30px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.mypg {
+    display: block;
+    text-indent: -9999px;
+    width: 40px;
+    height: 40px;
+}
+.mypg::after {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url(../image/mypage-icon.png) no-repeat center center;
+    background-size: 22px;
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+button {
+    display: block;
+    text-indent: -9999px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+}
+#gnb .menubar a {
+    display: block;
+    text-indent: -9999px;
+}
+button::after {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url(../image/menubar-icon.png) no-repeat center center;
+    background-size: 22px;
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+}
+
+#gnb:hover .allmenu{
+    display: block;
+    position: relative;
+}
+
+.allmenu .menubar-click {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 360px;
+    font-size: 38px;
+    font-weight: bold;
+}
+.allmenu .menubar-click a {
+    display: block;
+    height: 60px;
+    line-height: 60px;
 }
 
 
-.allmenu {
+.allmenu .menubar-click li ul {
     display: none;
+
 }
 
-.slide .bnr {
-    display: flex;
-    height: 354px;
-}
-.animated-text {
-    height: 50px;
-}
-.animated-text .left {
-    background: #222;
-    color: #fff;
-}
-.animated-text .right {
-    background: #e30613;
-    color: #fff;
-}
-.animated-text span {
-    font-size: 20px;
+
+
+.allmenu , .lang {
+    display: none;
 }
