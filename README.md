@@ -7,3 +7,4 @@ Megazoo website Renewel with responsive Web
 
 2023-12-15
 :header - comm.css
+:add image(not included comm.css)
