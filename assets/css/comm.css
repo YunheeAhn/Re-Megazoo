@@ -128,8 +128,13 @@ button::after {
 /* 스와이퍼 */
 .swiper {
     width: 360px;
+    height: 360px;
+}
+.swiper-wrapper {
+    width: 360px;
+    height: 360px;
+}
 
-  }
 
 
 /* 슬라이드텍스트 */
