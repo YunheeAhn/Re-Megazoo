@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="./assets/css/font.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/comm.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <title>Megazoo</title>
-
 </head>
+
 <!-- 모바일 메인페이지 -->
 <body>
     <header id="header">
@@ -38,7 +43,7 @@
                     </div>
                     <ul class="menubar-click">
                         <li>
-                            <a href="#">메가주
+                            <a class="menubar-click tit" href="#">메가주
                                 <ul class="hover">
                                     <li><a href="#">전시소개</a></li>
                                     <li><a href="#">지난 전시 결과</a></li>
@@ -46,7 +51,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">커뮤니티
+                            <a class="menubar-click tit" href="#">커뮤니티
                                 <ul>
                                     <li><a href="#">공지사항</a></li>
                                     <li><a href="#">Q&A</a></li>
@@ -54,7 +59,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">관람안내
+                            <a class="menubar-click tit" href="#">관람안내
                                 <ul>
                                     <li><a href="#">참가기업</a></li>
                                     <li><a href="#">사전등록</a></li>
@@ -63,14 +68,14 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">참가안내
+                            <a class="menubar-click tit" href="#">참가안내
                                 <ul>
                                     <li><a href="#">참가신청</a></li>
                                 </ul>
                             </a>
                         </li>
                         <li>
-                            <a href="#">이벤트</a>
+                            <a class="menubar-click tit" href="#">이벤트</a>
                         </li>
                     </ul>
                     <div class="lang">
@@ -84,25 +89,44 @@
             </nav>
         </div>
     </header>
-
-    <div class="slide">
-        <!-- 상단배너 -->
-        <div class="bnr">
-            <a href="#" class="bnrslide"><img src="./assets/image/Mobil-bnr(1).png" alt="배너슬라이드1"></a>
-            <!-- <a href="#" class="bnrslide"><img src="./assets/image/Mobil-bnr(2).jpg" alt="배너슬라이드2"></a>
-            <a href="#" class="bnrslide"><img src="./assets/image/Mobil-bnr(3).jpg" alt="배너슬라이드3"></a> -->
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <a href="#" class="bnrslide"><img src="./assets/image/Mobil-bnr(1).png" alt="배너슬라이드1"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="bnrslide"><img src="./assets/image/Mobil-bnr(2).jpg" alt="배너슬라이드2"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="bnrslide"><img src="./assets/image/Mobil-bnr(3).jpg" alt="배너슬라이드3"></a>
+            </div>
+            ...
         </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+    </div>
+
+
         <!-- 슬라이드텍스트1 -->
-        <div class="animated-text right">
-            <span>17-19 NOVEMBER KINTEX ILSAN</span>
-            <span>17-19 NOVEMBER KINTEX ILSAN</span>
-            <span>17-19 NOVEMBER KINTEX ILSAN</span>
+    <div class="flow">
+        <div class="animated right">
+            <div class="flowtxt right">
+                <p>17-19 NOVEMBER KINTEX ILSAN</p>
+                <p>17-19 NOVEMBER KINTEX ILSAN</p>
+                <p>17-19 NOVEMBER KINTEX ILSAN</p>
+                </div>
         </div>
         <!-- 슬라이드텍스트2 -->
-        <div class="animated-text left">
-            <span>사전예약 하러가기</span>
-            <span>사전예약 하러가기</span>
-            <span>사전예약 하러가기</span>
+        <div class="animated left">
+            <div class="flowtxt left">
+                <p>사전예약 하러가기</p>
+                <p>사전예약 하러가기</p>
+                <p>사전예약 하러가기</p>
+            </div>
         </div>
     </div>
 
