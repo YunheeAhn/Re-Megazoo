@@ -79,11 +79,8 @@ button {
     background-color: transparent;
     border: none;
 }
-#gnb .menubar a {
-    display: block;
-    text-indent: -9999px;
-}
-button::after {
+
+#gnb .btn.menubar::after {
     content: '';
     display: block;
     width: 22px;
@@ -97,77 +94,115 @@ button::after {
     transform: translate(0,-50%);
 }
 
-#gnb:hover .allmenu{
-    display: block;
+#gnb {
     position: relative;
 }
 
-.allmenu .menubar-click {
-    background-color: #fff;
-    position: absolute;
-    top: 0;
-    right: 0;
+.hover  {
+    display: none;
+}
+.allmenu-header {
     width: 360px;
+    height: 70px;
+    display: flex;
+    justify-content: spa;
+}
+.allmenu {
+    display: none;
+    width: 360px;
+    height: auto;
+    
+
+    position: absolute;
+    top: -22px;
+    right: 0;
+}
+#gnb:hover .allmenu{
+    display: block;
+}
+.menubar-click.tit {
+    z-index: 1000000;
+    background: #fff;
+    display: flex;
+
+
+    display: block;
     font-size: 38px;
     font-weight: bold;
+    color: #222222;
+
+    padding: 20px 200px 20px 0;
 }
-.allmenu .menubar-click a {
+
+.menubar-click.tit:hover {
+    color: #e30613;
+    display: flex;
+}
+
+.menubar-click.tit:hover::after {
+    content: '';
     display: block;
-    height: 60px;
-    line-height: 60px;
+    
+    width: 22px;
+    height: 22px;
+    background: url(../image/gnb-choice.png) no-repeat center center;
+    background-size: 22px;
 }
 
-.allmenu .menubar-click li ul {
-    display: none;
-
-}
-.allmenu, .lang {
-    display: none;
-}
 
 /* 스와이퍼 */
 .swiper {
-    width: 360px;
-    height: 360px;
+    width: 100%;
+    height: auto;
+    z-index: -1;
 }
-.swiper-wrapper {
-    width: 360px;
-    height: 360px;
+.swiper-slide img {
+    object-fit: cover;
 }
 
 
 
 /* 슬라이드텍스트 */
-.animated {
-    width: 100%;
-    height: 50px;
-}
 .animated .right {
     background: #222222;
 }
 .animated .left {
     background: #e30613;
 }
-.animated p {
+.animated span {
     font-family: 'Noto sans KR';
     font-size: 20px;
     color: #fff;
-    display: block;
-    height: 50px;
-
 }
 .flowtxt {
+    white-space: nowrap;
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 50px;
+    z-index: -1;
 }
-.animated > .flowtxt.right {
-    animation: marqueer 5s linear infinite;
+.flowtxt>div {
+    
 }
-@keyframes marqueel {
+.animated > .flowtxt.right > div{
+    line-height: 50px;
+    animation: marqueer 50s linear infinite;
+}
+@keyframes marqueer {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
   }
 
-.animated > .flowtxt.left{
-    animation: marqueel 50s linear infinite;
+.animated > .flowtxt.left > a > div {
+    line-height: 50px;
+    animation: marqueel 48s linear infinite;
 }
+@keyframes marqueel {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
+  }
+
+
 

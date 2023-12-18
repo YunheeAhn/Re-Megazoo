@@ -9,7 +9,8 @@
     />
     <link rel="stylesheet" type="text/css" href="./assets/css/font.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/comm.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer type="text/javascript" src="./assets/js/comm.js"></script>
     <title>Megazoo</title>
 </head>
 
@@ -33,12 +34,13 @@
         <!-- gnb -->
         <div>
             <nav id="gnb">
-                <button class="btn menubar" onclick="">
+                <button class="btn menubar">
                         전체메뉴보기
                         <!-- after 메뉴바아이콘 -->
                 </button>
                 <div class="allmenu">
                     <div class="allmenu-header">
+                        
                         <!-- //이전으로 돌아가는 화살표, 로고, 로그인버튼 있어야함// -->
                     </div>
                     <ul class="menubar-click">
@@ -52,7 +54,7 @@
                         </li>
                         <li>
                             <a class="menubar-click tit" href="#">커뮤니티
-                                <ul>
+                                <ul class="hover">
                                     <li><a href="#">공지사항</a></li>
                                     <li><a href="#">Q&A</a></li>
                                 </ul>
@@ -60,7 +62,7 @@
                         </li>
                         <li>
                             <a class="menubar-click tit" href="#">관람안내
-                                <ul>
+                                <ul class="hover">
                                     <li><a href="#">참가기업</a></li>
                                     <li><a href="#">사전등록</a></li>
                                     <li><a href="#">부스 배치도</a></li>                            
@@ -69,7 +71,7 @@
                         </li>
                         <li>
                             <a class="menubar-click tit" href="#">참가안내
-                                <ul>
+                                <ul class="hover">
                                     <li><a href="#">참가신청</a></li>
                                 </ul>
                             </a>
@@ -95,13 +97,13 @@
         <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-                <a href="#" class="bnrslide"><img src="./assets/image/Mobil-bnr(1).png" alt="배너슬라이드1"></a>
+                <img src="./assets/image/Mobile-bnr(1).jpg" alt="배너슬라이드1">
             </div>
             <div class="swiper-slide">
-                <a href="#" class="bnrslide"><img src="./assets/image/Mobil-bnr(2).jpg" alt="배너슬라이드2"></a>
+                <img src="./assets/image/Mobile-bnr(2).jpg" alt="배너슬라이드2">
             </div>
             <div class="swiper-slide">
-                <a href="#" class="bnrslide"><img src="./assets/image/Mobil-bnr(3).jpg" alt="배너슬라이드3"></a>
+                <img src="./assets/image/Mobile-bnr(3).jpg" alt="배너슬라이드3">
             </div>
             ...
         </div>
@@ -115,17 +117,25 @@
     <div class="flow">
         <div class="animated right">
             <div class="flowtxt right">
-                <p>17-19 NOVEMBER KINTEX ILSAN</p>
-                <p>17-19 NOVEMBER KINTEX ILSAN</p>
-                <p>17-19 NOVEMBER KINTEX ILSAN</p>
+                <div>
+                    <span>17-19 NOVEMBER KINTEX ILSAN</span>
+                    <span>17-19 NOVEMBER KINTEX ILSAN</span>
+                    <span>17-19 NOVEMBER KINTEX ILSAN</span>
+                    <span>17-19 NOVEMBER KINTEX ILSAN</span>
                 </div>
+            </div>
         </div>
         <!-- 슬라이드텍스트2 -->
         <div class="animated left">
             <div class="flowtxt left">
-                <p>사전예약 하러가기</p>
-                <p>사전예약 하러가기</p>
-                <p>사전예약 하러가기</p>
+                <a href="#">
+                    <div>
+                        <span>사전예약 하러가기</span>
+                        <span>사전예약 하러가기</span>
+                        <span>사전예약 하러가기</span>
+                        <span>사전예약 하러가기</span>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -137,11 +147,11 @@
         <section id="sec01">
             <div class="sec01 inner">
                 <div class="sec01 Tit">
-                    <h2 class="b">
+                    <h3 class="b">
                         <!-- before 별모양 -->
                         주요프로그램
                         <!-- after 별모양 -->
-                    </h2>
+                    </h3>
                 </div>
                 <div class="sec01 cnt">
                     <ul>
@@ -186,11 +196,11 @@
             <section id="sec02">
                 <div class="sec02 inner">
                     <div class="sec02 Tit">
-                        <h2 class="b">
+                        <h3 class="b">
                             <!-- before 느낌표아이콘 -->
                             공지사항
                             <!-- after 화살표 -->
-                        </h2>
+                        </h3>
                     </div>
                     <div class="sec02 bbs">
                         <ul class="bbs list">
@@ -220,11 +230,11 @@
             <section id="sec03">
                 <div class="sec03 inner">
                     <div class="sec03 Tit">
-                        <h2 class="b">
+                        <h3 class="b">
                             <!-- before 물음표아이콘 -->
                             Q&A
                             <!-- after 화살표 -->
-                        </h2>
+                        </h3>
                     </div>
                     <div class="sec03 qna">
                         <ul class="qna list">
@@ -254,11 +264,11 @@
             <section id="sec04">
                 <div class="sec04 inner">
                     <div class="sec04 Tit">
-                        <h2 class="b">
+                        <h3 class="b">
                             <!-- before 물음표아이콘 -->
                             이벤트
                             <!-- after 화살표 -->
-                        </h2>
+                        </h3>
                     </div>
                     <div class="sec04 evnt">
                         <ul class="evnt list">
@@ -294,11 +304,11 @@
         <section id="sec05">
             <div class="sec05 inner">
                 <div class="sec05 Tit">
-                    <h2 class="b">
+                    <h3 class="b">
                         <!-- before 웃음아이콘 -->
                         오시는길
                         <!-- after 웃음아이콘 -->
-                    </h2>
+                    </h3>
                 </div>
                 <div class="sec05 Info">
                     <ul>
