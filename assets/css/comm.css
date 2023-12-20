@@ -1,8 +1,3 @@
-:root {
-    --red : #e30613;
-
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +12,6 @@
 
     box-sizing: border-box;
     
-
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -25,11 +19,10 @@ body {
     width: 360px;
     margin: 0 auto;
 }
-
+/* 헤더 */
 #header {
     width: 360px;
     height: 70px;
-    /* background: aquamarine; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -85,7 +78,7 @@ button {
     border: none;
     cursor: pointer;
 }
-
+/* 네비게이션메뉴 */
 #gnb .btn.menubar::after {
     content: '';
     display: block;
@@ -99,11 +92,9 @@ button {
     right: 0;
     transform: translate(0,-50%);
 }
-
 #gnb {
     position: relative;
 }
-
 .hover  {
     display: none;
 }
@@ -117,7 +108,6 @@ button {
     display: none;
     width: 360px;
     height: auto;
-    
 
     position: absolute;
     top: -22px;
@@ -186,8 +176,6 @@ button {
     object-fit: cover;
 }
 
-
-
 /* 슬라이드텍스트 */
 .animated .right {
     background: #222222;
@@ -209,9 +197,7 @@ button {
     height: 50px;
     z-index: -1;
 }
-.flowtxt>div {
-    
-}
+
 .animated > .flowtxt.right > div{
     line-height: 50px;
     animation: marqueer 50s linear infinite;
@@ -229,7 +215,6 @@ button {
     from { transform: translateX(-50%); }
     to { transform: translateX(0); }
   }
-
 .b {
     font-family: 'Noto sans KR';
     font-weight: 600;
@@ -238,17 +223,14 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
-#main {
-    /* margin-top: 40px; */
-}
+/* 메인 */
+
 .sec01{
     margin-top: 40px;
     margin-bottom: 70px;
 }
-
 .sec01.Tit {
     margin-bottom: 35px;
 }
@@ -384,12 +366,7 @@ button {
 
     margin-left: 10px;
 }
-/* #sec-bg {
-    margin: 0 10px;
-    background-color: #222222;
-    padding-top: 50px;
 
-} */
 #sec-bg {
     display: block;
     padding-top: 50px;
@@ -399,6 +376,8 @@ button {
     height: 1155px;
     background: #222 url(../image/sec-bg.jpg) no-repeat center center;
     background-size: contain;
+
+    transform: translateX(-10px);
 } 
 #sec02,
 #sec03,
@@ -435,8 +414,7 @@ button {
     content: '';
     display: block;
     
-    margin-right: 10px;
-    margin-left: 114px;
+    margin-left: auto;
     
     width: 40px;
     height: 22px;
@@ -501,8 +479,7 @@ button {
     content: '';
     display: block;
     
-    margin-right: 10px;
-    margin-left: 160px;
+    margin-left: auto;
     
     width: 40px;
     height: 22px;
@@ -528,8 +505,7 @@ button {
     content: '';
     display: block;
     
-    margin-right: 10px;
-    margin-left: 142px;
+    margin-left: auto;
     
     width: 40px;
     height: 22px;

@@ -24,3 +24,7 @@ Megazoo website Renewel with responsive Web
 : #sec-bg 배경 이미지 안 입혀지는 오류 발생
     -> 백그라운드 이미지 요소 아닌 백그라운드로 설정
 =>오류 해결
+
+2023-12-20
+: #main>.sec02~04 밀림 현상 해결
+    -> transform : translateX(-10px)
